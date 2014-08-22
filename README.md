@@ -24,3 +24,8 @@ A PHP wrapper for HTML5 picture element. See:
     echo new ResponsivePictureView( $pic );
     ?>
 
+
+##Coming up soon
+
+- Possibility to re-using the `ResponsivePictureView` instance
+- Test environment
