@@ -13,7 +13,7 @@ class ResponsivePictureView implements ResponsivePictureViewInterface
      */
     public function __construct( ResponsivePictureInterface $picture, $template = null )
     {
-        $this->picture  = $picture;
+        $this->setPicture( $picture );
         $this->template = $template ?: realpath(__DIR__ . '/../templates/responsivepicture.tpl.php' );
     }
 
@@ -24,4 +24,37 @@ class ResponsivePictureView implements ResponsivePictureViewInterface
         include ( $this->template );
         return ob_get_clean();
     }
+
+
+    /**
+     * @param  ResponsivePictureInterface $picture
+     * @return string
+     */
+    public function __invoke( ResponsivePictureInterface $picture )
+    {
+        $this->setPicture( $picture );
+        return $this->__toString();
+    }
+
+
+
+    /**
+     * @param  ResponsivePictureInterface $picture
+     * @return ResponsivePictureViewInterface Fluid Interface
+     */
+    public function setPicture( ResponsivePictureInterface $picture )
+    {
+        $this->picture = $picture;
+        return $this;
+    }
+
+    /**
+     * @return ResponsivePictureInterface
+     */
+    public function getPicture( )
+    {
+        return $this->picture;
+    }
+
+
 }
