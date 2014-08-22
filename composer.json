@@ -1,0 +1,24 @@
+{
+    "name":        "tomkyle/responsivepicture",
+    "type":        "library",
+    "description": "A PHP wrapper for responsive HTML5 picture elements",
+
+    "authors": [
+        {
+            "name":  "Carsten Witt",
+            "email": "tomkyle@posteo.de",
+            "role":  "Developer"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "tomkyle\\ResponsivePicture\\": "src/"
+        }
+    },
+
+    "require": {
+        "php": ">=5.4.9"
+    }
+
+}
