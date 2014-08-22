@@ -8,6 +8,7 @@ A PHP wrapper for HTML5 picture element. See:
 
 
 
+
 ##Getting started
 
     <?php
@@ -23,6 +24,7 @@ A PHP wrapper for HTML5 picture element. See:
 
     echo new ResponsivePictureView( $pic );
     ?>
+
 
 
 ##Coming up soon
