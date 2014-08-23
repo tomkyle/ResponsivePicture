@@ -1,6 +1,8 @@
 #Responsive Picture Elements
 
 [![Build Status](https://travis-ci.org/tomkyle/ResponsivePicture.svg?branch=master)](https://travis-ci.org/tomkyle/ResponsivePicture)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tomkyle/ResponsivePicture/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/tomkyle/ResponsivePicture/?branch=master)
+
 
 A PHP wrapper for HTML5 picture element. See:
 
