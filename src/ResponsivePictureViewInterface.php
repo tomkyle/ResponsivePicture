@@ -11,5 +11,9 @@ interface ResponsivePictureViewInterface extends ResponsivePictureAwareInterface
      */
     public function __invoke( ResponsivePictureInterface $picture );
 
+    /**
+     * @return bool
+     */
+    public function valid();
 
 }
