@@ -1,10 +1,13 @@
 #Changelog
 
+####1.1.3 / 23.08.2014
+Minor fixes, readability
+
 ####1.1.2 / 23.08.2014
 
 - New interface `ResponsivePictureAwareInterface` with methods:
-    - `setResponsivePicture`
-    - `getResponsivePicture`
+    - `setPicture`
+    - `getPicture`
 - `ResponsivePictureViewInterface` now extends `ResponsivePictureAwareInterface`
 - ResponsivePictureView's first constructor parameter now is optional, accepting both `ResponsivePictureInterface` and `null`.
 - New `valid` method in `ResponsivePictureViewInterface`, indicating wether the ResponsivePictureView instance is ready to go. 

@@ -34,7 +34,7 @@ You may start with no parameters and later set the ResponsivePicture, either by 
 	
 	// Use setter method
 	$foo = new ResponsivePictureView;
-	$foo->setResponsicePicture( $pic_view );
+	$foo->setPicture( $pic_view );
 	echo $foo;
 	
 	// Or use with __invoke:
