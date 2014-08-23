@@ -12,12 +12,9 @@
     <!--[if IE 9]><video style="display: none;"><![endif]-->
     <?php foreach ($this->picture as $src): ?>
     <source srcset="<?php echo $src->getSrcset();?>"
-            media="<?php echo $src->getMedia();?>"
-
-            <?php
-            echo ($type = $src->getType()) ? 'type="' . $type .'"' : ''
-            # close img tag
-            ?>>
+            media="<?php echo $src->getMedia();?>"<?php
+            echo ($type = $src->getType()) ? '
+            type="' . $type .'"' : '' ?>>
     <?php endforeach; ?>
     <!--[if IE 9]></video><![endif]-->
     <img srcset="<?php echo $this->picture->url;?>"
