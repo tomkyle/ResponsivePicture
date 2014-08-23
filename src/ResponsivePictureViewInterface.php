@@ -1,7 +1,7 @@
 <?php
 namespace tomkyle\ResponsivePicture;
 
-interface ResponsivePictureViewInterface {
+interface ResponsivePictureViewInterface extends ResponsivePictureAwareInterface {
 
     public function __toString();
 
@@ -11,18 +11,9 @@ interface ResponsivePictureViewInterface {
      */
     public function __invoke( ResponsivePictureInterface $picture );
 
-
     /**
-     * @param  ResponsivePictureInterface $picture
-     * @return ResponsivePictureViewInterface Fluid Interface
+     * @return bool
      */
-    public function setPicture( ResponsivePictureInterface $picture );
-
-
-    /**
-     * @return ResponsivePictureInterface
-     */
-    public function getPicture( );
-
+    public function valid();
 
 }
