@@ -32,7 +32,7 @@ class ResponsivePictureView implements ResponsivePictureViewInterface
 
     public function valid()
     {
-        return (!empty($this->getResponsivePicture()));
+        return ($this->getPicture() instanceOf ResponsivePictureInterface);
     }
 
     /**
