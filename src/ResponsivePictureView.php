@@ -8,23 +8,32 @@ class ResponsivePictureView implements ResponsivePictureViewInterface
 
 
     /**
-     * @param ResponsivePictureInterface $picture   ResponsivePicture instance
-     * @param [type]                     $template  Template file to use
+     * @param ResponsivePictureInterface $picture  ResponsivePicture instance, default: null
+     * @param [type]                     $template  Template file to use, default: null
      */
-    public function __construct( ResponsivePictureInterface $picture, $template = null )
+    public function __construct( ResponsivePictureInterface $picture = null, $template = null )
     {
-        $this->setPicture( $picture );
+        if (!is_null($picture)) {
+            $this->setPicture( $picture );
+        }
         $this->template = $template ?: realpath(__DIR__ . '/../templates/responsivepicture.tpl.php' );
     }
 
 
     public function __toString()
     {
+        if (!$this->valid()) {
+            return '';
+        }
         ob_start();
         include ( $this->template );
         return ob_get_clean();
     }
 
+    public function valid()
+    {
+        return (!empty($this->getResponsivePicture()));
+    }
 
     /**
      * @param  ResponsivePictureInterface $picture
