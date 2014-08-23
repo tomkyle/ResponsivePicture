@@ -19,6 +19,10 @@
 
     "require": {
         "php": ">=5.4.9"
+    },
+
+    "require-dev": {
+        "satooshi/php-coveralls": "dev-master"
     }
 
 }

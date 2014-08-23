@@ -40,3 +40,8 @@ Thumbs.db
 ######################
 _schrott
 .AppleDouble
+vendor
+node_modules
+tests/build
+build
+phpunit.xml
