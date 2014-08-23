@@ -1,11 +1,26 @@
-#tomkyle/responsivepicture
+#Responsive Picture Elements
 
+[![Build Status](https://travis-ci.org/tomkyle/ResponsivePicture.svg?branch=master)](https://travis-ci.org/tomkyle/ResponsivePicture)
 
 A PHP wrapper for HTML5 picture element. See:
 
 - Scott Jehl's [Picturefill – A responsive image polyfill](http://scottjehl.github.io/picturefill/)
 - [Picturefill on Github](https://github.com/scottjehl/picturefill)
 
+
+
+##Installation
+
+This library has no dependencies except from `satooshi/php-coveralls` for testing. Install from command line or `composer.json` file:
+
+#####Command line
+    
+    composer require tomkyle/responsivepicture
+
+#####composer.json
+    "require": {
+        "tomkyle/responsivepicture": "~1.2"
+    }
 
 
 
@@ -44,6 +59,7 @@ You may start with no parameters and later set the ResponsivePicture, either by 
     echo $bar( $pic3 );    
 	?>
 	
-###Testing
+	
+##Testing
 Go to package root, install dependencies with `composer update` or `install`, run `phpunit`.
 
