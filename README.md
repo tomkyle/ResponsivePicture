@@ -44,7 +44,6 @@ You may start with no parameters and later set the ResponsivePicture, either by 
     echo $bar( $pic3 );    
 	?>
 	
+###Testing
+Go to package root, install dependencies with `composer update` or `install`, run `phpunit`.
 
-##Coming up soon
-
-- Test environment
