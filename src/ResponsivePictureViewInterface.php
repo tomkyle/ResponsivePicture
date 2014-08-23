@@ -3,6 +3,9 @@ namespace tomkyle\ResponsivePicture;
 
 interface ResponsivePictureViewInterface extends ResponsivePictureAwareInterface {
 
+    /**
+     * @return string
+     */
     public function __toString();
 
     /**
