@@ -1,8 +1,7 @@
 #Changelog
 
-####v1.2.0  / 23.08.2014
+####v1.2.0 to 1.2.2 / 23.08.2014
 - Added basic PHPUnit tests, mainly on correct instantiation.
-
 
 ####v1.1.2 to v1.1.4 / 23.08.2014
 
