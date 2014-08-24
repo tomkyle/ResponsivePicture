@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/tomkyle/ResponsivePicture.svg?branch=master)](https://travis-ci.org/tomkyle/ResponsivePicture)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tomkyle/ResponsivePicture/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/tomkyle/ResponsivePicture/?branch=master)
-
+[![Coverage Status](https://coveralls.io/repos/tomkyle/ResponsivePicture/badge.png)](https://coveralls.io/r/tomkyle/ResponsivePicture)
 
 A PHP wrapper for HTML5 picture element. See:
 
