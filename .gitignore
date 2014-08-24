@@ -45,3 +45,5 @@ node_modules
 tests/build
 build
 phpunit.xml
+composer.lock
+
