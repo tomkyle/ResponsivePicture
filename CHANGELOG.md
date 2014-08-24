@@ -1,6 +1,6 @@
 #Changelog
 
-####v1.2.3 to 1.2.4 / 24.08.2014
+####v1.2.3 to 1.2.5 / 24.08.2014
 - Added badges for Travis CI, Scrutinizer, Coveralls
 
 ####v1.2.0 to 1.2.2 / 23.08.2014
