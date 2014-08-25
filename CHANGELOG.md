@@ -1,5 +1,8 @@
 #Changelog
 
+####v.1.2.6 / 25.08.2014
+- Travis CI configuration: `before_script` becomes `install` – cf. [http://till.klampaeckel.de/blog/archives/204-Whats-wrong-with-composer-and-your-.travis.yml.html](http://till.klampaeckel.de/blog/archives/204-Whats-wrong-with-composer-and-your-.travis.yml.html)
+
 ####v1.2.3 to 1.2.5 / 24.08.2014
 - Added badges for Travis CI, Scrutinizer, Coveralls
 
