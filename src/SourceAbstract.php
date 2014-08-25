@@ -25,9 +25,9 @@ class SourceAbstract implements SourceInterface
     public function jsonSerialize()
     {
         $result = new \StdClass;
-        $result->media = $this->getMedia();
-        $result->src   = $this->getSrcset();
-        $result->type  = $this->getType();
+        $result->media  = $this->getMedia();
+        $result->srcset = $this->getSrcset();
+        $result->type   = $this->getType();
         return $result;
     }
 }
