@@ -13,25 +13,41 @@ class SourceAbstractTest extends \PHPUnit_Framework_TestCase {
         $this->stub = $this->getMockForAbstractClass( $this->class );
     }
 
-    public function testGetSrcset()
+
+    /**
+     * @dataProvider provideVariousKindOfArguments
+     */
+    public function testGetSrcset( $any )
     {
-        $this->stub->expects( $this->any())
-                   ->method(  'getSrcset');
-        $this->assertNull( $this->stub->getSrcset() );
+        $this->stub->srcset = $any;
+        $this->assertEquals( $any, $this->stub->getSrcset() );
     }
 
-    public function testGetMedia()
+    /**
+     * @dataProvider provideVariousKindOfArguments
+     */
+    public function testGetMedia( $any )
     {
-        $this->stub->expects( $this->any())
-                   ->method(  'getMedia');
-        $this->assertNull( $this->stub->getMedia() );
+        $this->stub->media = $any;
+        $this->assertEquals( $any, $this->stub->getMedia() );
     }
 
-    public function testGetType()
+    /**
+     * @dataProvider provideVariousKindOfArguments
+     */
+    public function testGetType( $any )
     {
-        $this->stub->expects( $this->any())
-                   ->method(  'getType');
-        $this->assertNull( $this->stub->getMedia() );
+        $this->stub->type = $any;
+        $this->assertEquals( $any, $this->stub->getType() );
+    }
+
+    public function provideVariousKindOfArguments()
+    {
+        return array(
+            array( '(min-width: 1200px)' ),
+            array( null ),
+            array( 123 )
+        );
     }
 
 }
