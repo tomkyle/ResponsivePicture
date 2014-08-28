@@ -1,5 +1,8 @@
 #Changelog
 
+####v.1.2.8 / 28.08.2014
+Added MIT license docblocks in src files.
+
 ####v.1.2.6 to 1.2.7 / 25.08.2014
 - Travis CI configuration: `before_script` becomes `install` – cf. [http://till.klampaeckel.de/blog/archives/204-Whats-wrong-with-composer-and-your-.travis.yml.html](http://till.klampaeckel.de/blog/archives/204-Whats-wrong-with-composer-and-your-.travis.yml.html)
 - Implemented more tests; reaching 100% coverage
